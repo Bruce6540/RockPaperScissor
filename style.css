@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background image */
+    background-image: url("bggg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps background still while scrolling */
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 20%);
+    margin-top: 20px;
+}
+
+.choices {
+    margin-bottom: 30px;
+}
+
+.choices button {
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 250px;
+    background-color: hsl(187, 93%, 62%);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.1s;
+}
+
+.choices button:hover {
+    background-color: hsl(189, 81%, 68%);
+}
+
+.choices button:active {
+    transform: scale(0.95);
+}
+
+#playerDisplay, #computerDisplay {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+#resultDisplay {
+    font-size: 5rem;
+    margin: 25px 0;
+}
+
+.scoreDisplay {
+    font-size: 3rem;
+    margin: 30px 0;
+}
+
+.greenText, #playerScoreDisplay {
+    color: hsl(108, 84%, 50%); /* Adjusted to a green hue */
+}
+
+.redText, #computerScoreDisplay {
+    color: hsl(0, 84%, 60%);
+}
+
+hr {
+    width: 80%;
+    margin: 40px 0;
+    border: 0;
+    border-top: 3px solid rgba(0,0,0,0.1);
+}
+
+/* --- Table & Info Container Styles --- */
+
+.strategy-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto 60px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Makes text readable over background */
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.strategy-container h2 {
+    color: #e91e63;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: normal; /* Better for long reading */
+}
+
+.info-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 3px solid #e91e63;
+    font-size: 1.2rem;
+}
+
+.info-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+    line-height: 3.3;
+    color: #333;
+}
+
+/* Target the left column for styling */
+.info-table td:first-child {
+    width: 30%;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.info-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Hover effect for table rows */
+.info-table tr:hover {
+    background-color: rgba(233, 30, 99, 0.05);
+}

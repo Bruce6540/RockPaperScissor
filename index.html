@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Rock - Paper - Scissors</h1>
+    
+    <div class="choices">
+        <button onclick="playGame('rock')">👊</button>
+        <button onclick="playGame('paper')">✋</button>
+        <button onclick="playGame('scissors')">✌</button>
+    </div>
+
+    <div id="playerDisplay">PLAYER: </div>
+    <div id="computerDisplay">COMPUTER: </div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">Player Score: 
+        <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Computer Score: 
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <hr>
+
+    <div class="strategy-container">
+        <h2 style="color: #e91e63;">Mastering the Game: Rock Paper Scissors Strategy</h2>
+        
+        <table class="info-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Insights & Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Overview</strong></td>
+                    <td>RPS is a game of psychology, patterns, and probability. While the computer is random, humans are predictable.</td>
+                </tr>
+                <tr>
+                    <td><strong>History</strong></td>
+                    <td>Originating in China (Han dynasty) as "shoushiling," it evolved into Japan's "Jan-ken." It's now a global decision-making tool.</td>
+                </tr>
+                <tr>
+                    <td><strong>Winners Stick</strong></td>
+                    <td>Statistically, people who win a round are likely to play the same move again in the next round.</td>
+                </tr>
+                <tr>
+                    <td><strong>Losers Switch</strong></td>
+                    <td>People who lose often switch to the next choice in the "Rock-Paper-Scissors" sequence.</td>
+                </tr>
+                <tr>
+                    <td><strong>The "Rock" Bias</strong></td>
+                    <td>Beginners and men have a slight statistical tendency to lead with Rock.</td>
+                </tr>
+                <tr>
+                    <td><strong>Global Variations</strong></td>
+                    <td>Known as <em>Janken</em> (Japan) or <em>Gawi-Bawi-Bo</em> (Korea). Pop culture added "Lizard Spock" to reduce ties.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
